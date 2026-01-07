@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment-service
+  title: Payment Service
+  description: Handles payment processing and transactions
+  tags:
+    - backend
+    - payments
+    - python
+  links:
+    - url: https://github.com/example/payment-service
+      title: GitHub
+      icon: github
+  scores:
+    - score_id: security
+      value: 92
+      reason: PCI DSS compliant
+    - score_id: documentation
+      value: 85
+      reason: API docs complete
+    - score_id: testing
+      value: 90
+      reason: High test coverage
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platform-team
+  system: backend-platform
+  providesApis:
+    - payment-api
+  dependsOn:
+    - resource:default/postgres-db

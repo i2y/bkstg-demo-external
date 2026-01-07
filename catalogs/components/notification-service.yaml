@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: notification-service
+  title: Notification Service
+  description: Sends notifications via email, SMS, and push
+  tags:
+    - backend
+    - notifications
+    - go
+  links:
+    - url: https://github.com/example/notification-service
+      title: GitHub
+      icon: github
+  scores:
+    - score_id: security
+      value: 88
+      reason: Secure credential handling
+    - score_id: documentation
+      value: 75
+      reason: Needs more examples
+    - score_id: testing
+      value: 82
+      reason: Good unit test coverage
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platform-team
+  dependsOn:
+    - resource:default/redis-cache

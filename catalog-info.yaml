@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: bkstg-demo-external-all
+  description: All entities in bkstg-demo-external repository
+spec:
+  type: url
+  targets:
+    - ./catalogs/components/payment-service.yaml
+    - ./catalogs/components/notification-service.yaml
+    - ./catalogs/apis/payment-api.yaml

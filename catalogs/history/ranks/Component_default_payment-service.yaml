@@ -1,0 +1,55 @@
+entity_id: "Component:default/payment-service"
+ranks:
+  tech_health:
+    entries:
+      - timestamp: "2025-09-15T10:00:00Z"
+        value: 71.7
+        label: "B"
+        score_snapshot:
+          security: 80
+          documentation: 60
+          testing: 75
+      - timestamp: "2025-10-25T12:00:00Z"
+        value: 79.0
+        label: "B"
+        score_snapshot:
+          security: 85
+          documentation: 70
+          testing: 82
+      - timestamp: "2025-11-20T14:00:00Z"
+        value: 85.3
+        label: "A"
+        score_snapshot:
+          security: 88
+          documentation: 80
+          testing: 88
+      - timestamp: "2025-12-15T09:00:00Z"
+        value: 89.0
+        label: "A"
+        score_snapshot:
+          security: 92
+          documentation: 85
+          testing: 90
+  production_readiness:
+    entries:
+      - timestamp: "2025-09-15T10:00:00Z"
+        value: 68.3
+        label: "C"
+        score_snapshot:
+          security: 80
+          documentation: 60
+          testing: 75
+      - timestamp: "2025-11-20T14:00:00Z"
+        value: 82.0
+        label: "A"
+        score_snapshot:
+          security: 88
+          documentation: 80
+          testing: 88
+      - timestamp: "2025-12-15T09:00:00Z"
+        value: 88.5
+        label: "A"
+        score_snapshot:
+          security: 92
+          documentation: 85
+          testing: 90

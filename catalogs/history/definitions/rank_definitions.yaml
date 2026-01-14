@@ -1,0 +1,39 @@
+ranks:
+  tech_health:
+    entries:
+      - timestamp: "2025-03-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: tech_health
+          name: "Tech Health"
+          formula: "(documentation + testing + maintainability) / 3"
+          thresholds:
+            - min: 90
+              label: S
+            - min: 80
+              label: A
+            - min: 70
+              label: B
+            - min: 60
+              label: C
+            - min: 0
+              label: D
+  security_grade:
+    entries:
+      - timestamp: "2025-04-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: security_grade
+          name: "Security Grade"
+          formula: "(vulnerability * 0.5 + compliance * 0.3 + access_control * 0.2)"
+          thresholds:
+            - min: 90
+              label: S
+            - min: 80
+              label: A
+            - min: 70
+              label: B
+            - min: 60
+              label: C
+            - min: 0
+              label: D

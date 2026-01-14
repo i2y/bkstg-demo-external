@@ -1,0 +1,61 @@
+scores:
+  documentation:
+    entries:
+      - timestamp: "2025-03-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: documentation
+          name: "Documentation"
+          description: "Quality and completeness of documentation"
+          min_value: 0
+          max_value: 100
+  testing:
+    entries:
+      - timestamp: "2025-03-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: testing
+          name: "Testing"
+          description: "Test coverage and quality"
+          min_value: 0
+          max_value: 100
+  maintainability:
+    entries:
+      - timestamp: "2025-03-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: maintainability
+          name: "Maintainability"
+          description: "Code quality and maintainability"
+          min_value: 0
+          max_value: 100
+  vulnerability:
+    entries:
+      - timestamp: "2025-04-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: vulnerability
+          name: "Vulnerability"
+          description: "Security vulnerability status"
+          min_value: 0
+          max_value: 100
+  compliance:
+    entries:
+      - timestamp: "2025-04-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: compliance
+          name: "Compliance"
+          description: "Regulatory compliance status"
+          min_value: 0
+          max_value: 100
+  access_control:
+    entries:
+      - timestamp: "2025-04-01T09:00:00Z"
+        change_type: created
+        new_value:
+          id: access_control
+          name: "Access Control"
+          description: "Authentication and authorization implementation"
+          min_value: 0
+          max_value: 100

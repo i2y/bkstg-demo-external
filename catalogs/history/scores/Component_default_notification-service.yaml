@@ -1,92 +1,62 @@
 entity_id: Component:default/notification-service
-entries:
-  # Tech Health - documentation history
-  - score_id: documentation
-    scorecard_id: tech-health
-    timestamp: "2025-06-01T10:00:00Z"
-    old_value: 55
-    new_value: 65
-    old_reason: "Minimal docs"
-    new_reason: "README improved"
-  - score_id: documentation
-    scorecard_id: tech-health
-    timestamp: "2025-09-01T10:00:00Z"
-    old_value: 65
-    new_value: 75
-    old_reason: "README improved"
-    new_reason: "Needs more examples"
-  # Tech Health - testing history
-  - score_id: testing
-    scorecard_id: tech-health
-    timestamp: "2025-07-01T09:00:00Z"
-    old_value: 65
-    new_value: 75
-    old_reason: "Basic tests"
-    new_reason: "More unit tests"
-  - score_id: testing
-    scorecard_id: tech-health
-    timestamp: "2025-10-01T09:00:00Z"
-    old_value: 75
-    new_value: 82
-    old_reason: "More unit tests"
-    new_reason: "Good unit test coverage"
-  # Tech Health - maintainability history
-  - score_id: maintainability
-    scorecard_id: tech-health
-    timestamp: "2025-05-15T11:00:00Z"
-    old_value: 68
-    new_value: 74
-    old_reason: "Decent code"
-    new_reason: "Refactored modules"
-  - score_id: maintainability
-    scorecard_id: tech-health
-    timestamp: "2025-08-15T11:00:00Z"
-    old_value: 74
-    new_value: 80
-    old_reason: "Refactored modules"
-    new_reason: "Well-structured Go code"
-  # Security Audit - vulnerability history
-  - score_id: vulnerability
-    scorecard_id: security-audit
-    timestamp: "2025-05-01T11:00:00Z"
-    old_value: 72
-    new_value: 80
-    old_reason: "Some issues"
-    new_reason: "Issues fixed"
-  - score_id: vulnerability
-    scorecard_id: security-audit
-    timestamp: "2025-08-15T11:00:00Z"
-    old_value: 80
-    new_value: 88
-    old_reason: "Issues fixed"
-    new_reason: "Secure credential handling"
-  # Security Audit - compliance history
-  - score_id: compliance
-    scorecard_id: security-audit
-    timestamp: "2025-06-15T15:00:00Z"
-    old_value: 70
-    new_value: 78
-    old_reason: "Partial GDPR"
-    new_reason: "GDPR progress"
-  - score_id: compliance
-    scorecard_id: security-audit
-    timestamp: "2025-09-01T15:00:00Z"
-    old_value: 78
-    new_value: 85
-    old_reason: "GDPR progress"
-    new_reason: "GDPR compliant for user data"
-  # Security Audit - access_control history
-  - score_id: access_control
-    scorecard_id: security-audit
-    timestamp: "2025-07-01T13:00:00Z"
-    old_value: 70
-    new_value: 78
-    old_reason: "Basic auth"
-    new_reason: "Service accounts"
-  - score_id: access_control
-    scorecard_id: security-audit
-    timestamp: "2025-10-01T13:00:00Z"
-    old_value: 78
-    new_value: 82
-    old_reason: "Service accounts"
-    new_reason: "Service account authentication"
+scores:
+  documentation:
+    entries:
+      - timestamp: "2025-10-20T10:00:00Z"
+        value: 65
+        reason: "README improved"
+        source: "manual"
+      - timestamp: "2025-12-01T10:00:00Z"
+        value: 75
+        reason: "Needs more examples"
+        source: "manual"
+  testing:
+    entries:
+      - timestamp: "2025-11-01T09:00:00Z"
+        value: 75
+        reason: "More unit tests"
+        source: "manual"
+      - timestamp: "2026-01-01T09:00:00Z"
+        value: 82
+        reason: "Good unit test coverage"
+        source: "manual"
+  maintainability:
+    entries:
+      - timestamp: "2025-10-25T11:00:00Z"
+        value: 74
+        reason: "Refactored modules"
+        source: "manual"
+      - timestamp: "2025-12-15T11:00:00Z"
+        value: 80
+        reason: "Well-structured Go code"
+        source: "manual"
+  vulnerability:
+    entries:
+      - timestamp: "2025-10-18T11:00:00Z"
+        value: 80
+        reason: "Issues fixed"
+        source: "manual"
+      - timestamp: "2025-12-18T11:00:00Z"
+        value: 88
+        reason: "Secure credential handling"
+        source: "manual"
+  compliance:
+    entries:
+      - timestamp: "2025-10-28T15:00:00Z"
+        value: 78
+        reason: "GDPR progress"
+        source: "manual"
+      - timestamp: "2025-12-28T15:00:00Z"
+        value: 85
+        reason: "GDPR compliant for user data"
+        source: "manual"
+  access_control:
+    entries:
+      - timestamp: "2025-11-05T13:00:00Z"
+        value: 78
+        reason: "Service accounts"
+        source: "manual"
+      - timestamp: "2026-01-05T13:00:00Z"
+        value: 82
+        reason: "Service account authentication"
+        source: "manual"

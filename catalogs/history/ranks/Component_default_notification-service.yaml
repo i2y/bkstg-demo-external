@@ -1,32 +1,34 @@
 entity_id: Component:default/notification-service
-entries:
-  # Tech Health Rank history
-  - rank_id: tech_health
-    scorecard_id: tech-health
-    timestamp: "2025-06-01T12:00:00Z"
-    old_label: C
-    new_label: B
-    old_value: 65.0
-    new_value: 72.0
-  - rank_id: tech_health
-    scorecard_id: tech-health
-    timestamp: "2025-10-01T12:00:00Z"
-    old_label: B
-    new_label: B
-    old_value: 72.0
-    new_value: 79.0
-  # Security Grade history
-  - rank_id: security_grade
-    scorecard_id: security-audit
-    timestamp: "2025-06-15T12:00:00Z"
-    old_label: C
-    new_label: B
-    old_value: 70.5
-    new_value: 76.0
-  - rank_id: security_grade
-    scorecard_id: security-audit
-    timestamp: "2025-09-01T12:00:00Z"
-    old_label: B
-    new_label: A
-    old_value: 76.0
-    new_value: 85.3
+ranks:
+  tech_health:
+    entries:
+      - timestamp: "2025-10-25T12:00:00Z"
+        value: 71.3
+        label: B
+        score_snapshot:
+          documentation: 65
+          testing: 75
+          maintainability: 74
+      - timestamp: "2026-01-05T12:00:00Z"
+        value: 79.0
+        label: B
+        score_snapshot:
+          documentation: 75
+          testing: 82
+          maintainability: 80
+  security_grade:
+    entries:
+      - timestamp: "2025-10-28T12:00:00Z"
+        value: 79.0
+        label: B
+        score_snapshot:
+          vulnerability: 80
+          compliance: 78
+          access_control: 78
+      - timestamp: "2025-12-28T12:00:00Z"
+        value: 85.5
+        label: A
+        score_snapshot:
+          vulnerability: 88
+          compliance: 85
+          access_control: 82

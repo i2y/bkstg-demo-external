@@ -1,99 +1,66 @@
 entity_id: Component:default/payment-service
-entries:
-  # Tech Health - documentation history
-  - score_id: documentation
-    scorecard_id: tech-health
-    timestamp: "2025-05-01T10:00:00Z"
-    old_value: 65
-    new_value: 72
-    old_reason: "Basic docs"
-    new_reason: "API reference added"
-  - score_id: documentation
-    scorecard_id: tech-health
-    timestamp: "2025-07-15T10:00:00Z"
-    old_value: 72
-    new_value: 80
-    old_reason: "API reference added"
-    new_reason: "Integration examples"
-  - score_id: documentation
-    scorecard_id: tech-health
-    timestamp: "2025-10-01T10:00:00Z"
-    old_value: 80
-    new_value: 85
-    old_reason: "Integration examples"
-    new_reason: "API docs complete"
-  # Tech Health - testing history
-  - score_id: testing
-    scorecard_id: tech-health
-    timestamp: "2025-06-01T09:00:00Z"
-    old_value: 75
-    new_value: 82
-    old_reason: "Good coverage"
-    new_reason: "E2E tests added"
-  - score_id: testing
-    scorecard_id: tech-health
-    timestamp: "2025-09-15T09:00:00Z"
-    old_value: 82
-    new_value: 90
-    old_reason: "E2E tests added"
-    new_reason: "High test coverage"
-  # Tech Health - maintainability history
-  - score_id: maintainability
-    scorecard_id: tech-health
-    timestamp: "2025-05-15T11:00:00Z"
-    old_value: 78
-    new_value: 82
-    old_reason: "Clean code"
-    new_reason: "Improved patterns"
-  - score_id: maintainability
-    scorecard_id: tech-health
-    timestamp: "2025-08-01T11:00:00Z"
-    old_value: 82
-    new_value: 88
-    old_reason: "Improved patterns"
-    new_reason: "Clean Python codebase"
-  # Security Audit - vulnerability history
-  - score_id: vulnerability
-    scorecard_id: security-audit
-    timestamp: "2025-04-01T11:00:00Z"
-    old_value: 85
-    new_value: 88
-    old_reason: "Good security"
-    new_reason: "PCI audit progress"
-  - score_id: vulnerability
-    scorecard_id: security-audit
-    timestamp: "2025-07-01T11:00:00Z"
-    old_value: 88
-    new_value: 92
-    old_reason: "PCI audit progress"
-    new_reason: "PCI DSS compliant"
-  # Security Audit - compliance history
-  - score_id: compliance
-    scorecard_id: security-audit
-    timestamp: "2025-05-01T15:00:00Z"
-    old_value: 88
-    new_value: 92
-    old_reason: "PCI-DSS Level 2"
-    new_reason: "PCI-DSS Level 1 progress"
-  - score_id: compliance
-    scorecard_id: security-audit
-    timestamp: "2025-08-15T15:00:00Z"
-    old_value: 92
-    new_value: 98
-    old_reason: "PCI-DSS Level 1 progress"
-    new_reason: "Full PCI-DSS Level 1 compliance"
-  # Security Audit - access_control history
-  - score_id: access_control
-    scorecard_id: security-audit
-    timestamp: "2025-06-01T13:00:00Z"
-    old_value: 88
-    new_value: 92
-    old_reason: "Strong auth"
-    new_reason: "HSM integration"
-  - score_id: access_control
-    scorecard_id: security-audit
-    timestamp: "2025-09-01T13:00:00Z"
-    old_value: 92
-    new_value: 95
-    old_reason: "HSM integration"
-    new_reason: "Hardware security modules for key management"
+scores:
+  documentation:
+    entries:
+      - timestamp: "2025-10-18T10:00:00Z"
+        value: 72
+        reason: "API reference added"
+        source: "manual"
+      - timestamp: "2025-11-18T10:00:00Z"
+        value: 80
+        reason: "Integration examples"
+        source: "manual"
+      - timestamp: "2026-01-08T10:00:00Z"
+        value: 85
+        reason: "API docs complete"
+        source: "manual"
+  testing:
+    entries:
+      - timestamp: "2025-10-22T09:00:00Z"
+        value: 82
+        reason: "E2E tests added"
+        source: "manual"
+      - timestamp: "2025-12-22T09:00:00Z"
+        value: 90
+        reason: "High test coverage"
+        source: "manual"
+  maintainability:
+    entries:
+      - timestamp: "2025-10-25T11:00:00Z"
+        value: 82
+        reason: "Improved patterns"
+        source: "manual"
+      - timestamp: "2025-12-25T11:00:00Z"
+        value: 88
+        reason: "Clean Python codebase"
+        source: "manual"
+  vulnerability:
+    entries:
+      - timestamp: "2025-10-20T11:00:00Z"
+        value: 88
+        reason: "PCI audit progress"
+        source: "manual"
+      - timestamp: "2025-12-20T11:00:00Z"
+        value: 92
+        reason: "PCI DSS compliant"
+        source: "manual"
+  compliance:
+    entries:
+      - timestamp: "2025-10-28T15:00:00Z"
+        value: 92
+        reason: "PCI-DSS Level 1 progress"
+        source: "manual"
+      - timestamp: "2025-12-28T15:00:00Z"
+        value: 98
+        reason: "Full PCI-DSS Level 1 compliance"
+        source: "manual"
+  access_control:
+    entries:
+      - timestamp: "2025-10-30T13:00:00Z"
+        value: 92
+        reason: "HSM integration"
+        source: "manual"
+      - timestamp: "2025-12-30T13:00:00Z"
+        value: 95
+        reason: "Hardware security modules for key management"
+        source: "manual"

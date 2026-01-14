@@ -13,15 +13,32 @@ metadata:
       title: GitHub
       icon: github
   scores:
-    - score_id: security
-      value: 88
-      reason: Secure credential handling
+    # Tech Health Scorecard
     - score_id: documentation
+      scorecard_id: tech-health
       value: 75
       reason: Needs more examples
     - score_id: testing
+      scorecard_id: tech-health
       value: 82
       reason: Good unit test coverage
+    - score_id: maintainability
+      scorecard_id: tech-health
+      value: 80
+      reason: Well-structured Go code
+    # Security Audit Scorecard
+    - score_id: vulnerability
+      scorecard_id: security-audit
+      value: 88
+      reason: Secure credential handling
+    - score_id: compliance
+      scorecard_id: security-audit
+      value: 85
+      reason: GDPR compliant for user data
+    - score_id: access_control
+      scorecard_id: security-audit
+      value: 82
+      reason: Service account authentication
 spec:
   type: service
   lifecycle: production

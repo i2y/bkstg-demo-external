@@ -13,15 +13,32 @@ metadata:
       title: GitHub
       icon: github
   scores:
-    - score_id: security
-      value: 92
-      reason: PCI DSS compliant
+    # Tech Health Scorecard
     - score_id: documentation
+      scorecard_id: tech-health
       value: 85
       reason: API docs complete
     - score_id: testing
+      scorecard_id: tech-health
       value: 90
       reason: High test coverage
+    - score_id: maintainability
+      scorecard_id: tech-health
+      value: 88
+      reason: Clean Python codebase
+    # Security Audit Scorecard
+    - score_id: vulnerability
+      scorecard_id: security-audit
+      value: 92
+      reason: PCI DSS compliant
+    - score_id: compliance
+      scorecard_id: security-audit
+      value: 98
+      reason: Full PCI-DSS Level 1 compliance
+    - score_id: access_control
+      scorecard_id: security-audit
+      value: 95
+      reason: Hardware security modules for key management
 spec:
   type: service
   lifecycle: production

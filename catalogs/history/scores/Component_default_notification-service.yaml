@@ -1,18 +1,92 @@
 entity_id: Component:default/notification-service
 entries:
-  # Tech Health - testing
+  # Tech Health - documentation history
+  - score_id: documentation
+    scorecard_id: tech-health
+    timestamp: "2025-06-01T10:00:00Z"
+    old_value: 55
+    new_value: 65
+    old_reason: "Minimal docs"
+    new_reason: "README improved"
+  - score_id: documentation
+    scorecard_id: tech-health
+    timestamp: "2025-09-01T10:00:00Z"
+    old_value: 65
+    new_value: 75
+    old_reason: "README improved"
+    new_reason: "Needs more examples"
+  # Tech Health - testing history
+  - score_id: testing
+    scorecard_id: tech-health
+    timestamp: "2025-07-01T09:00:00Z"
+    old_value: 65
+    new_value: 75
+    old_reason: "Basic tests"
+    new_reason: "More unit tests"
   - score_id: testing
     scorecard_id: tech-health
     timestamp: "2025-10-01T09:00:00Z"
-    old_value: 70
+    old_value: 75
     new_value: 82
-    old_reason: "Basic tests"
+    old_reason: "More unit tests"
     new_reason: "Good unit test coverage"
-  # Security Audit - vulnerability
+  # Tech Health - maintainability history
+  - score_id: maintainability
+    scorecard_id: tech-health
+    timestamp: "2025-05-15T11:00:00Z"
+    old_value: 68
+    new_value: 74
+    old_reason: "Decent code"
+    new_reason: "Refactored modules"
+  - score_id: maintainability
+    scorecard_id: tech-health
+    timestamp: "2025-08-15T11:00:00Z"
+    old_value: 74
+    new_value: 80
+    old_reason: "Refactored modules"
+    new_reason: "Well-structured Go code"
+  # Security Audit - vulnerability history
+  - score_id: vulnerability
+    scorecard_id: security-audit
+    timestamp: "2025-05-01T11:00:00Z"
+    old_value: 72
+    new_value: 80
+    old_reason: "Some issues"
+    new_reason: "Issues fixed"
   - score_id: vulnerability
     scorecard_id: security-audit
     timestamp: "2025-08-15T11:00:00Z"
     old_value: 80
     new_value: 88
-    old_reason: "Some issues"
+    old_reason: "Issues fixed"
     new_reason: "Secure credential handling"
+  # Security Audit - compliance history
+  - score_id: compliance
+    scorecard_id: security-audit
+    timestamp: "2025-06-15T15:00:00Z"
+    old_value: 70
+    new_value: 78
+    old_reason: "Partial GDPR"
+    new_reason: "GDPR progress"
+  - score_id: compliance
+    scorecard_id: security-audit
+    timestamp: "2025-09-01T15:00:00Z"
+    old_value: 78
+    new_value: 85
+    old_reason: "GDPR progress"
+    new_reason: "GDPR compliant for user data"
+  # Security Audit - access_control history
+  - score_id: access_control
+    scorecard_id: security-audit
+    timestamp: "2025-07-01T13:00:00Z"
+    old_value: 70
+    new_value: 78
+    old_reason: "Basic auth"
+    new_reason: "Service accounts"
+  - score_id: access_control
+    scorecard_id: security-audit
+    timestamp: "2025-10-01T13:00:00Z"
+    old_value: 78
+    new_value: 82
+    old_reason: "Service accounts"
+    new_reason: "Service account authentication"

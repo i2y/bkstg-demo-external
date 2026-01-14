@@ -1,26 +1,99 @@
 entity_id: Component:default/payment-service
 entries:
-  # Tech Health - documentation
+  # Tech Health - documentation history
   - score_id: documentation
     scorecard_id: tech-health
-    timestamp: "2025-08-01T10:00:00Z"
-    old_value: 70
-    new_value: 85
+    timestamp: "2025-05-01T10:00:00Z"
+    old_value: 65
+    new_value: 72
     old_reason: "Basic docs"
+    new_reason: "API reference added"
+  - score_id: documentation
+    scorecard_id: tech-health
+    timestamp: "2025-07-15T10:00:00Z"
+    old_value: 72
+    new_value: 80
+    old_reason: "API reference added"
+    new_reason: "Integration examples"
+  - score_id: documentation
+    scorecard_id: tech-health
+    timestamp: "2025-10-01T10:00:00Z"
+    old_value: 80
+    new_value: 85
+    old_reason: "Integration examples"
     new_reason: "API docs complete"
-  # Tech Health - testing
+  # Tech Health - testing history
+  - score_id: testing
+    scorecard_id: tech-health
+    timestamp: "2025-06-01T09:00:00Z"
+    old_value: 75
+    new_value: 82
+    old_reason: "Good coverage"
+    new_reason: "E2E tests added"
   - score_id: testing
     scorecard_id: tech-health
     timestamp: "2025-09-15T09:00:00Z"
-    old_value: 80
+    old_value: 82
     new_value: 90
-    old_reason: "Good coverage"
+    old_reason: "E2E tests added"
     new_reason: "High test coverage"
-  # Security Audit - compliance
+  # Tech Health - maintainability history
+  - score_id: maintainability
+    scorecard_id: tech-health
+    timestamp: "2025-05-15T11:00:00Z"
+    old_value: 78
+    new_value: 82
+    old_reason: "Clean code"
+    new_reason: "Improved patterns"
+  - score_id: maintainability
+    scorecard_id: tech-health
+    timestamp: "2025-08-01T11:00:00Z"
+    old_value: 82
+    new_value: 88
+    old_reason: "Improved patterns"
+    new_reason: "Clean Python codebase"
+  # Security Audit - vulnerability history
+  - score_id: vulnerability
+    scorecard_id: security-audit
+    timestamp: "2025-04-01T11:00:00Z"
+    old_value: 85
+    new_value: 88
+    old_reason: "Good security"
+    new_reason: "PCI audit progress"
+  - score_id: vulnerability
+    scorecard_id: security-audit
+    timestamp: "2025-07-01T11:00:00Z"
+    old_value: 88
+    new_value: 92
+    old_reason: "PCI audit progress"
+    new_reason: "PCI DSS compliant"
+  # Security Audit - compliance history
   - score_id: compliance
     scorecard_id: security-audit
-    timestamp: "2025-07-01T15:00:00Z"
-    old_value: 90
+    timestamp: "2025-05-01T15:00:00Z"
+    old_value: 88
+    new_value: 92
+    old_reason: "PCI-DSS Level 2"
+    new_reason: "PCI-DSS Level 1 progress"
+  - score_id: compliance
+    scorecard_id: security-audit
+    timestamp: "2025-08-15T15:00:00Z"
+    old_value: 92
     new_value: 98
-    old_reason: "PCI-DSS compliant"
+    old_reason: "PCI-DSS Level 1 progress"
     new_reason: "Full PCI-DSS Level 1 compliance"
+  # Security Audit - access_control history
+  - score_id: access_control
+    scorecard_id: security-audit
+    timestamp: "2025-06-01T13:00:00Z"
+    old_value: 88
+    new_value: 92
+    old_reason: "Strong auth"
+    new_reason: "HSM integration"
+  - score_id: access_control
+    scorecard_id: security-audit
+    timestamp: "2025-09-01T13:00:00Z"
+    old_value: 92
+    new_value: 95
+    old_reason: "HSM integration"
+    new_reason: "Hardware security modules for key management"

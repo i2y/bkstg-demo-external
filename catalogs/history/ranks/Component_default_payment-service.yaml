@@ -1,6 +1,13 @@
 entity_id: Component:default/payment-service
 entries:
-  # Tech Health Rank
+  # Tech Health Rank history
+  - rank_id: tech_health
+    scorecard_id: tech-health
+    timestamp: "2025-06-01T12:00:00Z"
+    old_label: B
+    new_label: A
+    old_value: 75.0
+    new_value: 82.0
   - rank_id: tech_health
     scorecard_id: tech-health
     timestamp: "2025-09-01T12:00:00Z"
@@ -8,7 +15,14 @@ entries:
     new_label: A
     old_value: 82.0
     new_value: 87.5
-  # Security Grade
+  # Security Grade history
+  - rank_id: security_grade
+    scorecard_id: security-audit
+    timestamp: "2025-05-01T12:00:00Z"
+    old_label: A
+    new_label: A
+    old_value: 87.0
+    new_value: 90.0
   - rank_id: security_grade
     scorecard_id: security-audit
     timestamp: "2025-07-15T12:00:00Z"

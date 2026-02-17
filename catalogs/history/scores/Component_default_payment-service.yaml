@@ -1,66 +1,66 @@
 entity_id: Component:default/payment-service
 scores:
-  documentation:
+  tech-health:documentation:
     entries:
-      - timestamp: "2025-10-18T10:00:00Z"
-        value: 72
-        reason: "API reference added"
-        source: "manual"
-      - timestamp: "2025-11-18T10:00:00Z"
-        value: 80
-        reason: "Integration examples"
-        source: "manual"
-      - timestamp: "2026-01-08T10:00:00Z"
-        value: 85
-        reason: "API docs complete"
-        source: "manual"
-  testing:
+    - timestamp: '2025-10-18T10:00:00Z'
+      value: 72
+      reason: API reference added
+      source: manual
+    - timestamp: '2025-11-18T10:00:00Z'
+      value: 80
+      reason: Integration examples
+      source: manual
+    - timestamp: '2026-01-08T10:00:00Z'
+      value: 85
+      reason: API docs complete
+      source: manual
+  tech-health:testing:
     entries:
-      - timestamp: "2025-10-22T09:00:00Z"
-        value: 82
-        reason: "E2E tests added"
-        source: "manual"
-      - timestamp: "2025-12-22T09:00:00Z"
-        value: 90
-        reason: "High test coverage"
-        source: "manual"
-  maintainability:
+    - timestamp: '2025-10-22T09:00:00Z'
+      value: 82
+      reason: E2E tests added
+      source: manual
+    - timestamp: '2025-12-22T09:00:00Z'
+      value: 90
+      reason: High test coverage
+      source: manual
+  tech-health:maintainability:
     entries:
-      - timestamp: "2025-10-25T11:00:00Z"
-        value: 82
-        reason: "Improved patterns"
-        source: "manual"
-      - timestamp: "2025-12-25T11:00:00Z"
-        value: 88
-        reason: "Clean Python codebase"
-        source: "manual"
-  vulnerability:
+    - timestamp: '2025-10-25T11:00:00Z'
+      value: 82
+      reason: Improved patterns
+      source: manual
+    - timestamp: '2025-12-25T11:00:00Z'
+      value: 88
+      reason: Clean Python codebase
+      source: manual
+  security-audit:vulnerability:
     entries:
-      - timestamp: "2025-10-20T11:00:00Z"
-        value: 88
-        reason: "PCI audit progress"
-        source: "manual"
-      - timestamp: "2025-12-20T11:00:00Z"
-        value: 92
-        reason: "PCI DSS compliant"
-        source: "manual"
-  compliance:
+    - timestamp: '2025-10-20T11:00:00Z'
+      value: 88
+      reason: PCI audit progress
+      source: manual
+    - timestamp: '2025-12-20T11:00:00Z'
+      value: 92
+      reason: PCI DSS compliant
+      source: manual
+  security-audit:compliance:
     entries:
-      - timestamp: "2025-10-28T15:00:00Z"
-        value: 92
-        reason: "PCI-DSS Level 1 progress"
-        source: "manual"
-      - timestamp: "2025-12-28T15:00:00Z"
-        value: 98
-        reason: "Full PCI-DSS Level 1 compliance"
-        source: "manual"
-  access_control:
+    - timestamp: '2025-10-28T15:00:00Z'
+      value: 92
+      reason: PCI-DSS Level 1 progress
+      source: manual
+    - timestamp: '2025-12-28T15:00:00Z'
+      value: 98
+      reason: Full PCI-DSS Level 1 compliance
+      source: manual
+  security-audit:access_control:
     entries:
-      - timestamp: "2025-10-30T13:00:00Z"
-        value: 92
-        reason: "HSM integration"
-        source: "manual"
-      - timestamp: "2025-12-30T13:00:00Z"
-        value: 95
-        reason: "Hardware security modules for key management"
-        source: "manual"
+    - timestamp: '2025-10-30T13:00:00Z'
+      value: 92
+      reason: HSM integration
+      source: manual
+    - timestamp: '2025-12-30T13:00:00Z'
+      value: 95
+      reason: Hardware security modules for key management
+      source: manual

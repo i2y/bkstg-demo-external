@@ -1,62 +1,62 @@
 entity_id: Component:default/notification-service
 scores:
-  documentation:
+  tech-health:documentation:
     entries:
-      - timestamp: "2025-10-20T10:00:00Z"
-        value: 65
-        reason: "README improved"
-        source: "manual"
-      - timestamp: "2025-12-01T10:00:00Z"
-        value: 75
-        reason: "Needs more examples"
-        source: "manual"
-  testing:
+    - timestamp: '2025-10-20T10:00:00Z'
+      value: 65
+      reason: README improved
+      source: manual
+    - timestamp: '2025-12-01T10:00:00Z'
+      value: 75
+      reason: Needs more examples
+      source: manual
+  tech-health:testing:
     entries:
-      - timestamp: "2025-11-01T09:00:00Z"
-        value: 75
-        reason: "More unit tests"
-        source: "manual"
-      - timestamp: "2026-01-01T09:00:00Z"
-        value: 82
-        reason: "Good unit test coverage"
-        source: "manual"
-  maintainability:
+    - timestamp: '2025-11-01T09:00:00Z'
+      value: 75
+      reason: More unit tests
+      source: manual
+    - timestamp: '2026-01-01T09:00:00Z'
+      value: 82
+      reason: Good unit test coverage
+      source: manual
+  tech-health:maintainability:
     entries:
-      - timestamp: "2025-10-25T11:00:00Z"
-        value: 74
-        reason: "Refactored modules"
-        source: "manual"
-      - timestamp: "2025-12-15T11:00:00Z"
-        value: 80
-        reason: "Well-structured Go code"
-        source: "manual"
-  vulnerability:
+    - timestamp: '2025-10-25T11:00:00Z'
+      value: 74
+      reason: Refactored modules
+      source: manual
+    - timestamp: '2025-12-15T11:00:00Z'
+      value: 80
+      reason: Well-structured Go code
+      source: manual
+  security-audit:vulnerability:
     entries:
-      - timestamp: "2025-10-18T11:00:00Z"
-        value: 80
-        reason: "Issues fixed"
-        source: "manual"
-      - timestamp: "2025-12-18T11:00:00Z"
-        value: 88
-        reason: "Secure credential handling"
-        source: "manual"
-  compliance:
+    - timestamp: '2025-10-18T11:00:00Z'
+      value: 80
+      reason: Issues fixed
+      source: manual
+    - timestamp: '2025-12-18T11:00:00Z'
+      value: 88
+      reason: Secure credential handling
+      source: manual
+  security-audit:compliance:
     entries:
-      - timestamp: "2025-10-28T15:00:00Z"
-        value: 78
-        reason: "GDPR progress"
-        source: "manual"
-      - timestamp: "2025-12-28T15:00:00Z"
-        value: 85
-        reason: "GDPR compliant for user data"
-        source: "manual"
-  access_control:
+    - timestamp: '2025-10-28T15:00:00Z'
+      value: 78
+      reason: GDPR progress
+      source: manual
+    - timestamp: '2025-12-28T15:00:00Z'
+      value: 85
+      reason: GDPR compliant for user data
+      source: manual
+  security-audit:access_control:
     entries:
-      - timestamp: "2025-11-05T13:00:00Z"
-        value: 78
-        reason: "Service accounts"
-        source: "manual"
-      - timestamp: "2026-01-05T13:00:00Z"
-        value: 82
-        reason: "Service account authentication"
-        source: "manual"
+    - timestamp: '2025-11-05T13:00:00Z'
+      value: 78
+      reason: Service accounts
+      source: manual
+    - timestamp: '2026-01-05T13:00:00Z'
+      value: 82
+      reason: Service account authentication
+      source: manual

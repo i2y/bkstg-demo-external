@@ -1,41 +1,41 @@
 entity_id: Component:default/payment-service
 ranks:
-  tech_health:
+  tech-health:tech_health:
     entries:
-      - timestamp: "2025-10-25T12:00:00Z"
-        value: 78.7
-        label: B
-        score_snapshot:
-          documentation: 72
-          testing: 82
-          maintainability: 82
-      - timestamp: "2025-12-25T12:00:00Z"
-        value: 87.7
-        label: A
-        score_snapshot:
-          documentation: 80
-          testing: 90
-          maintainability: 88
-      - timestamp: "2026-01-08T12:00:00Z"
-        value: 87.7
-        label: A
-        score_snapshot:
-          documentation: 85
-          testing: 90
-          maintainability: 88
-  security_grade:
+    - timestamp: '2025-10-25T12:00:00Z'
+      value: 78.7
+      label: B
+      score_snapshot:
+        documentation: 72
+        testing: 82
+        maintainability: 82
+    - timestamp: '2025-12-25T12:00:00Z'
+      value: 87.7
+      label: A
+      score_snapshot:
+        documentation: 80
+        testing: 90
+        maintainability: 88
+    - timestamp: '2026-01-08T12:00:00Z'
+      value: 87.7
+      label: A
+      score_snapshot:
+        documentation: 85
+        testing: 90
+        maintainability: 88
+  security-audit:security_grade:
     entries:
-      - timestamp: "2025-10-28T12:00:00Z"
-        value: 90.0
-        label: A
-        score_snapshot:
-          vulnerability: 88
-          compliance: 92
-          access_control: 92
-      - timestamp: "2025-12-28T12:00:00Z"
-        value: 95.0
-        label: S
-        score_snapshot:
-          vulnerability: 92
-          compliance: 98
-          access_control: 95
+    - timestamp: '2025-10-28T12:00:00Z'
+      value: 90.0
+      label: A
+      score_snapshot:
+        vulnerability: 88
+        compliance: 92
+        access_control: 92
+    - timestamp: '2025-12-28T12:00:00Z'
+      value: 95.0
+      label: S
+      score_snapshot:
+        vulnerability: 92
+        compliance: 98
+        access_control: 95
